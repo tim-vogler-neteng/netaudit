@@ -1,0 +1,17 @@
+name: srl-simple
+
+topology:
+  nodes:
+    spine1:
+      kind: srl
+      image: ghcr.io/nokia/srlinux:latest
+    leaf1:
+      kind: srl
+      image: ghcr.io/nokia/srlinux:latest
+    leaf2:
+      kind: srl
+      image: ghcr.io/nokia/srlinux:latest
+
+  links:
+    - endpoints: ["spine1:e1-1", "leaf1:e1-1"]
+    - endpoints: ["spine1:e1-2", "leaf2:e1-1"]

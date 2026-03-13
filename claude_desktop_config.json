@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "netaudit": {
+      "command": "python",
+      "args": ["/path/to/digitaltwin/mcp_server.py"],
+      "env": {
+        "DO_API_TOKEN": "your-digitalocean-token-here"
+      }
+    }
+  }
+}

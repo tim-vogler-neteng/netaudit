@@ -1,0 +1,4 @@
+# Claude Desktop
+.claude/
+claude_desktop_config.json
+.env
